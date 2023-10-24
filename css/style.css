@@ -55,6 +55,8 @@ nav li a:hover {
     color: #fff;
 }
 
+.icon { display: none; }
+
 /* --- section ------------------------------------------------------------- inicio --- */
 
 .section-inicio_primaria {
@@ -238,4 +240,46 @@ form input {
     width: 30px;
     margin: 8px;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    header div, header a {
+        flex: 1 0 50%;
+    }
+    header nav {
+        flex-basis: 100%;
+    }
+    .icon {
+        display: block;
+        padding-right: 0.6rem;
+        text-align: right;
+        color: #000;
+    }
+    nav ul {
+        display: none;
+    }
+    nav.responsive ul {
+        display: block;
+    }
+    nav.responsive ul li {
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    nav.responsive ul li a {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
 }

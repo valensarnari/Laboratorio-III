@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+
     <link href="css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/fontawesome.min.css">
+
     <title>The Office fans | Inicio</title>
 </head>
 <body>
@@ -16,7 +21,10 @@
             <a href="index.html"><img src="images/logo.png" alt="The Office"></a>
             <!-- <a href="index.html"><p class="nav-logo">The Office Fans</p></a> -->
         </div>
-        <nav>
+        <a href="javascript:void(0);" class="icon" onclick="menuDesplegable()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <nav id="menu-bar" class="">
             <ul>
                 <li><a href="personajes.html">Personajes</a></li>
                 <li><a href="#">Recuerdos</a></li>
@@ -72,6 +80,7 @@
             <a href="#"><img src="images/tiktok.svg" alt="Tik Tok"></a>
         </div>
     </footer>
+    <script src="js/script.js"></script>
     <script src="js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
