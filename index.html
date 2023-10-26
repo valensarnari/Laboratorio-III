@@ -11,16 +11,29 @@
     <link href="css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <title>The Office fans | Inicio</title>
 </head>
 <body>
     <header>
-        <div>
-            <a href="index.html"><img src="images/logo.png" alt="The Office"></a>
-            <!-- <a href="index.html"><p class="nav-logo">The Office Fans</p></a> -->
-        </div>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="index.html"><img src="images/logo.png" alt="The Office"></a></li>
+                <li class="toggle"><a href="#"><img src="images/bars-solid.svg" alt="Barra"></a></li>
+                <li class="item has-submenu">
+                    <a tabindex="0">Personajes</a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="#">Principales</a></li>
+                        <li class="subitem"><a href="#">Secundarios</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="#">Recuerdos</a></li>
+                <li class="item"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!--
         <a href="javascript:void(0);" class="icon" onclick="menuDesplegable()">
             <i class="fa fa-bars"></i>
         </a>
@@ -31,6 +44,8 @@
                 <li><a href="#">Acerca del sitio</a></li>
             </ul>
         </nav>
+        -->
+
     </header>
 
     <section class="section-inicio_primaria">
