@@ -257,7 +257,10 @@ form input {
     margin-top: 50px;
 }
 
+/* --- 1300px ---------------------------------------------------------------- */
+
 @media screen and (max-width: 1300px) {
+    /* section index */
     .section-inicio_primaria {
         flex-direction: column;
         align-items: center;
@@ -300,7 +303,10 @@ form input {
     
 }
 
+/* --- 768px ---------------------------------------------------------------- */
+
 @media screen and (max-width: 768px) {
+    /* header */
     header {
         padding: 20px;
     }
@@ -336,7 +342,7 @@ form input {
         display: initial;
     }
 
-    /* --- section ------------------------------------------------------------- inicio --- */
+    /* section index */
 
     .section1-inicio_container1 img {
         width: 80%;
@@ -369,7 +375,7 @@ form input {
         width: 90%;
     }
 
-    /* --- footer ---------------------------------------------------------------- */
+    /* footer */
     .form-container {
         width: 400px;
     }
@@ -383,7 +389,10 @@ form input {
     }
 }
 
+/* --- 480px ---------------------------------------------------------------- */
+
 @media screen and (max-width: 480px) {
+    /* section index */
     .section2-inicio_container {
         width: 80%;
     }
@@ -393,12 +402,13 @@ form input {
         height: 200px;
     }
 
+    /* footer */
     .form-container {
         width: 80%;
         height: auto;
     }
 
-    .form-container input {
-        width: 140%
+    form input {
+        width: 120%;
     }
 }
