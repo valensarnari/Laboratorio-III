@@ -193,7 +193,7 @@ h1 {
     width: 100px;
 }
 
-/* --- section ------------------------------------------------------------- inicio --- */
+/* --- section ------------------------------------------------------------- recuerdos --- */
 
 .section-recuerdos {
     background-color: #274761;
@@ -215,10 +215,79 @@ h1 {
     box-shadow: 0px 0px 30px #000;
     transition: .3s;
     min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
 }
 
-.section-recuerdos-container img:hover{
-    transform: scale(0.9);
+.section-recuerdos-container img {
+    width: 95%;
+}
+
+.section-recuerdos-container a {
+    text-align: center;
+}
+
+/* --- section ------------------------------------------------------------- contacto --- */
+
+.section-contacto {
+    background-color: #274761;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container2 {
+    background-color: #000;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.form-container2 p {
+    color: #fff;
+}
+
+.form-container2 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container2 form p {
+    text-align: center;
+}
+
+.form-container2 form input {
+    margin-top: 30px;
+    width: 360px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form textarea {
+    margin-top: 30px;
+    min-width: 360px;
+    max-width: 360px;
+}
+
+#submit2 {
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#submit2:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
 }
 
 /* footer ---------------------------------------------------------------- */ 
@@ -251,11 +320,11 @@ footer {
     align-items: center;
 }
 
-form p {
+.form-container form p {
     text-align: center;
 }
 
-form input {
+.form-container form input {
     margin-top: 30px;
     width: 360px;
     height: 30px;
@@ -266,23 +335,23 @@ form input {
 #submit {
     width: 100px;
     height: 40px;
-    margin: 50px;
+    margin-top: 40px;
     border-radius: 50px;
-    background-color: #fff;
-    border-style: solid 5px;
-    color: #000;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 #submit:hover {
-    background-color: #000;
+    background-color: #fff;
     border-color: #fff;
-    color: #fff;
+    color: #000;
 }
 
 .redes img {
     width: 30px;
     margin: 8px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 /* --- 1300px ---------------------------------------------------------------- */
@@ -460,8 +529,8 @@ form input {
     .form-container {
         width: 400px;
     }
-    
-    form input {
+
+    .form-container form input {
         margin-top: 20px;
     }
     
@@ -488,13 +557,32 @@ form input {
         font-size: 300%;
     }
 
+    /* section contacto */
+    .section-contacto {
+        padding: 100px 0;
+    }
+
+    .form-container2 {
+        width: 85%;
+        height: auto;
+    }
+
+    .form-container2 form input {
+        width: 99%;
+    }
+
+    form textarea {
+        min-width: 99%;
+        max-width: 99%;
+    }
+
     /* footer */
     .form-container {
         width: 80%;
         height: auto;
     }
 
-    form input {
+    .form-container form input {
         width: 120%;
     }
 }
