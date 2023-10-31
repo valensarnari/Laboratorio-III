@@ -15,7 +15,7 @@ header {
     top: 0; left: 0; right: 0;
     background: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-    padding: 10px 7%;
+    padding: 10px 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +32,7 @@ header label {
 }
 
 header .logo img{
-    width: 150px;
+    width: 170px;
 }
 
 header .navbar ul {
@@ -76,6 +76,17 @@ header .navbar ul li:hover > ul {
     display: none;
 }
 
+/* h1 resto*/
+
+#h1-resto {
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    padding: 10px;
+}
+
 /* --- section ------------------------------------------------------------- inicio --- */
 
 .section-inicio_primaria {
@@ -96,11 +107,12 @@ header .navbar ul li:hover > ul {
 }
 
 .section1-inicio_container2 p {
-    width: 250px;
+    width: 90%;
+    max-width: 500px;
     color: #fff;
 }
 
-h1 {
+#h1-index {
     color: #fff;
     font-size: 4rem;
     font-weight: 300;
@@ -134,35 +146,34 @@ h1 {
 
 .section2-inicio_container p {
     margin: 20px;
-    text-align: justify;
     width: 300px;
 }
 
 /* --- section ------------------------------------------------------------- personajes --- */
 
 .section-personajes_1 {
-    background-color: #000;
+    background-color: #274761;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .section-personajes_2 {
-    background-color: #274761;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-personajes_3 {
     background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.section-personajes_4 {
+.section-personajes_3 {
     background-color: #274761;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-personajes_4 {
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,6 +184,11 @@ h1 {
     margin: 50px;
 }
 
+.section-personajes_4 .section1-personajes_container-text,
+.section-personajes_2 .section1-personajes_container-text {
+    margin-left: 10px;
+}
+
 .section1-personajes_container-text {
     display: flex;
     flex-direction: column;
@@ -181,7 +197,8 @@ h1 {
 }
 
 .section1-personajes_container-text p {
-    width: 200px;
+    width: 90%;
+    max-width: 425px;
     color: #fff;
 }
 
@@ -229,10 +246,61 @@ h1 {
     text-align: center;
 }
 
-/* --- section ------------------------------------------------------------- contacto --- */
+/* --- section ------------------------------------------------------------- reseñas --- */
+.section-resenas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: 700px;
+}
 
+.section-resenas {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    max-width: 500px;
+    width: 90%;
+    min-height: 300px;
+    height: 90%;
+    margin: 3%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-resenas h2 {
+    font-size: 30px;
+    max-width: 290px;
+    width: 90%;
+    text-align: center;
+}
+
+.section-resenas p {
+    max-width: 400px;
+    width: 90%;
+    margin: 10px;
+    text-align: center;
+}
+
+.section-resenas a {
+    color: #A1C7E6;
+    max-width: 300px;
+    width: 90%;
+    text-align: center;
+}
+
+/* --- section ------------------------------------------------------------- contacto --- */
 .section-contacto {
-    background-color: #274761;
+    background: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
     padding: 100px;
     display: flex;
     justify-content: center;
@@ -240,7 +308,7 @@ h1 {
 }
 
 .form-container2 {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
     padding: 40px;
 }
@@ -357,6 +425,11 @@ footer {
 /* --- 1300px ---------------------------------------------------------------- */
 
 @media screen and (max-width: 1300px) {
+    /* header */
+    header .logo img {
+        width: 150px;
+    }
+
     /* section index */
     .section-inicio_primaria {
         flex-direction: column;
@@ -371,16 +444,16 @@ footer {
     
     .section1-inicio_container2 {
         margin-bottom: 30px;
+        align-items: center;
     }
     
 
     .section1-inicio_container2 p {
         width: 700px;
         margin: 10px;
-        text-align: center;
     }
     
-    h1 {
+    #h1-index {
         width: 700px;
         text-align: center;
     }
@@ -434,6 +507,11 @@ footer {
         text-align: center;
     }
     
+    /* section reseas */
+    .section-resenas-container {
+        flex-direction: column;
+    }
+
 }
 
 /* --- 768px ---------------------------------------------------------------- */
@@ -494,7 +572,7 @@ footer {
         width: 80%;
     }
     
-    h1 {
+    #h1-index {
         width: 80%;
         font-size: 30px;
     }
@@ -559,7 +637,7 @@ footer {
 
     /* section contacto */
     .section-contacto {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .form-container2 {
