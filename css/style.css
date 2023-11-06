@@ -260,7 +260,7 @@ header .navbar ul li:hover > ul {
 .section-resenas {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
-    padding: 10px;
+    padding: 10px 30px;
     max-width: 500px;
     width: 90%;
     min-height: 300px;
@@ -269,7 +269,7 @@ header .navbar ul li:hover > ul {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
 }
 
@@ -277,21 +277,18 @@ header .navbar ul li:hover > ul {
     font-size: 30px;
     max-width: 290px;
     width: 90%;
-    text-align: center;
 }
 
 .section-resenas p {
     max-width: 400px;
     width: 90%;
     margin: 10px;
-    text-align: center;
 }
 
 .section-resenas a {
     color: #A1C7E6;
     max-width: 300px;
     width: 90%;
-    text-align: center;
 }
 
 /* --- section ------------------------------------------------------------- contacto --- */
@@ -499,7 +496,6 @@ footer {
     
     .section1-personajes_container-text p {
         width: 500px;
-        text-align: center;
     }
     
     .section1-personajes_container-text h2 {
